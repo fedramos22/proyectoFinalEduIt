@@ -17,10 +17,8 @@ const Tienda = () =>{
         }
         localStorage.setItem('producto', JSON.stringify(articulo));
 
-        /* setProducto(articulo); */
+        setProducto(articulo);
         console.log(producto);
-        
-        //localStorage.setItem('producto', 'Buzo verde','')
     }
 
     return(
@@ -44,7 +42,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -57,7 +55,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -70,7 +68,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -83,7 +81,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -96,7 +94,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -109,7 +107,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -122,7 +120,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -154,7 +152,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -167,7 +165,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -180,7 +178,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -193,7 +191,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -206,7 +204,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -219,7 +217,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -232,7 +230,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -264,7 +262,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -277,7 +275,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -290,7 +288,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -303,7 +301,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -316,7 +314,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -329,7 +327,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -342,7 +340,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -374,7 +372,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -387,7 +385,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -400,7 +398,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -413,7 +411,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -426,7 +424,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -439,7 +437,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto
@@ -452,7 +450,7 @@ const Tienda = () =>{
                             <figure>
                                 <img src={ropaEjemplo}
                                     alt=""/>
-                                <i class="bi bi-bag-plus"></i>
+                                <i class="bi bi-bag-plus" onClick = {carrito}></i>
                             </figure>
                             <h2 class="descArticulo">
                                 Soy un producto

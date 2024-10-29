@@ -8,11 +8,35 @@ import categoriaDos from '../Assets/Images/categoriaDos.png'
 import categoriaTres from '../Assets/Images/categoriaTres.png'
 import categoriaCuatro from '../Assets/Images/categoriaCuatro.png'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 
 
 const Home = () => {
 
+    const [producto, setProducto] = useState({});
+
     const navigate = useNavigate();
+    
+    const carrito = () => {
+        
+        alert("Producto agregado al carrito")
+
+        const articulo = {
+            nombre: 'Buzo verde',
+            precio: '20.00',
+            img: {ropaEjemplo}
+        }
+        localStorage.setItem('producto', JSON.stringify(articulo));
+
+        setProducto(articulo); 
+
+        console.log(producto);
+        
+    }
+
+    const redirigir = () => {
+        alert("Redirigiendo a la página...");
+    }
 
     const Tienda = () =>{
         navigate('/Tienda');
@@ -42,7 +66,7 @@ const Home = () => {
                         <figure>
                             <img src={ropaEjemplo}
                                 alt=""/>
-                            <i class="bi bi-bag-plus"></i>
+                            <i class="bi bi-bag-plus"onClick={carrito}></i>
                         </figure>
                         <h2 class="descArticulo">
                             Soy un producto
@@ -55,7 +79,7 @@ const Home = () => {
                         <figure>
                             <img src={ropaEjemplo}
                                 alt=""/>
-                            <i class="bi bi-bag-plus"></i>
+                            <i class="bi bi-bag-plus" onClick={carrito}></i>
                         </figure>
                         <h2 class="descArticulo">
                             Soy un producto
@@ -68,7 +92,7 @@ const Home = () => {
                         <figure>
                             <img src={ropaEjemplo}
                                 alt=""/>
-                            <i class="bi bi-bag-plus"></i>
+                            <i class="bi bi-bag-plus"onClick={carrito}></i>
                         </figure>
                         <h2 class="descArticulo">
                             Soy un producto
@@ -81,7 +105,7 @@ const Home = () => {
                         <figure>
                             <img src={ropaEjemplo}
                                 alt=""/>
-                            <i class="bi bi-bag-plus"></i>
+                            <i class="bi bi-bag-plus" onClick={carrito}></i>
                         </figure>
                         <h2 class="descArticulo">
                             Soy un producto
@@ -95,17 +119,17 @@ const Home = () => {
                     </span>
             </section>
             <section class="categoria">
-                <div class="catUno" style={{backgroundImage: `url(${categoriaTres})`}
+                <div onClick={redirigir} class="catUno" style={{backgroundImage: `url(${categoriaTres})`}
                 }>
                     <h2>Camisas y remeras</h2>
                 </div>
-                <div class="catDos" style={{backgroundImage: `url(${categoriaDos})`}}>
+                <div onClick={redirigir} class="catDos" style={{backgroundImage: `url(${categoriaDos})`}}>
                     <h2>Pantalones y Polleras</h2>
                 </div>
-                <div class="catTres" style={{backgroundImage: `url(${categoriaUno})`}}>
+                <div onClick={redirigir} class="catTres" style={{backgroundImage: `url(${categoriaUno})`}}>
                     <h2>Sweaters</h2>
                 </div>
-                <div class="catCuatro" style={{backgroundImage: `url(${categoriaCuatro})` }}>
+                <div onClick={redirigir} class="catCuatro" style={{backgroundImage: `url(${categoriaCuatro})` }}>
                     <h2>Buzos y Camperas</h2>
                 </div>
             </section>
