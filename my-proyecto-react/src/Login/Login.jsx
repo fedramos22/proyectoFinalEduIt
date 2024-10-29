@@ -1,5 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import './Login.css';
+import ContactoFondo from '../Assets/Images/fondoContacto.png'
+
 
 const Login = () => {
 
@@ -33,40 +36,26 @@ const Login = () => {
 
     return(
         <>
-            <div className="container">
-                <form className="container m-5 p-5 center w-75">
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input 
-                        type="email" 
-                        class="form-control" 
-                        id="exampleInputEmail1" 
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        aria-describedby="emailHelp
-                        "/>
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input 
-                        type="password" 
-                        class="form-control"
-                        id="exampleInputPassword1" 
-                        value={password}
-                        onChange={(e)=> setPassword(e.target.value)}
-                        />
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <div className="m-auto">
-                        <button type="submit" class="btn btn-primary" onClick={loginUser}>Submit
-                        </button>
-                    </div>
-                </form>
-            </div>
+            <main style= {{backgroundImage: `url(${ContactoFondo})`}}>
+                <div className="card">
+                    <form>
+                        <h1>Login</h1>
+                        <div className="input-box">
+                            <input value={email} onChange={(e)=> setEmail(e.target.value)} type="text" placeholder="Nombre de Usuario" required/>
+                            <i className="bi bi-person-fill"></i>
+                        </div>
+                        <div className="input-box">
+                            <input value={password} onChange={(e) => setPassword(e.target.value)}type="password" placeholder="Constraseña" required/>
+                            <i className="bi bi-lock-fill"></i>
+                        </div>
+                        <div className="remember-forgot">
+                            <label><input type="checkbox" />Recuerdame</label>
+                        </div>
+
+                        <button onClick={loginUser} type="submit">Login</button>
+                    </form>
+                </div>
+            </main>
         </>
     );
 }

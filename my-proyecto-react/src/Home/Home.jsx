@@ -8,7 +8,6 @@ import categoriaDos from '../Assets/Images/categoriaDos.png'
 import categoriaTres from '../Assets/Images/categoriaTres.png'
 import categoriaCuatro from '../Assets/Images/categoriaCuatro.png'
 import { useNavigate } from 'react-router-dom'
-import MyVerticallyCenteredModal from '../Componentes/Modal'
 
 
 const Home = () => {
@@ -31,7 +30,7 @@ const Home = () => {
                                 Descubre la <br/> Moda
                         </span>
                         <label>
-                            <input onClick={MyVerticallyCenteredModal} type="button" value="Más Info"/>
+                            <input type="button" value="Más Info"/>
                         </label>
                     </div>
                     <div class="tarjetaDos" style={{backgroundImage: `url(${tarjetaDos})`}}>
